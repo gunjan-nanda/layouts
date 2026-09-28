@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokenomics</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style type="text/tailwindcss">
+        @theme {
+        --color-clifford: white;
+          --leading-180:180%;
+          --leading-150:150%;
+           --text-22:22px;
+            --text-28:28px;       }
+    
+        * {
+            font-family: "poppins", sans-serif;
+        }
+
+        .box {
+            position: relative;
+        }
+
+        .box::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 10px;
+            padding: 1px;
+            background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.1) 0.97%, rgba(255, 255, 255, 0) 103.14%);
+            background: linear-gradient(95.21deg, rgba(255, 255, 255, 0.2) -0.59%, rgba(255, 255, 255, 0.092) 106.99%);
+            mask:
+                linear-gradient(#000 0 0) content-box,
+                linear-gradient(#000 0 0);
+            mask-composite: exclude;
+        }
+
+        .box-1 {
+            position: relative;
+        }
+
+        .box-1::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 10px;
+            padding: 0 1px 1px 1px;
+            background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.1) 0.97%, rgba(255, 255, 255, 0) 103.14%);
+            background: linear-gradient(95.21deg, rgba(255, 255, 255, 0.2) -0.59%, rgba(255, 255, 255, 0.092) 106.99%);
+            mask:
+                linear-gradient(#000 0 0) content-box,
+                linear-gradient(#000 0 0);
+            mask-composite: exclude;
+        }
+
+        .box-2 {
+            position: relative;
+        }
+
+        .box-2::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 10px;
+            padding: 1px 1px 0px 1px;
+            background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.1) 0.97%, rgba(255, 255, 255, 0) 103.14%);
+            background: linear-gradient(95.21deg, rgba(255, 255, 255, 0.2) -0.59%, rgba(255, 255, 255, 0.092) 106.99%);
+            mask:
+                linear-gradient(#000 0 0) content-box,
+                linear-gradient(#000 0 0);
+            mask-composite: exclude;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="min-h-screen flex items-center justify-center p-4 bg-[#0C0B0B]">
+        <div class="max-w-[1318px] w-full mx-auto">
+            <h1 class="font-semibold text-3xl sm:text-4xl lg:text-5xl leading-[128%] text-center mb-8 text-clifford">
+                Tokenomics </h1>
+            <div class="flex flex-col lg:flex-row gap-[23px] items-center max-w-[1318px] w-full justify-center">
+                <div class="max-w-[424px] w-full pt-[16px] pb-[22px] px-[20px] rounded-[10px] blur-6 box">
+                    <h4 class="font-normal text-22 leading-150 text-clifford">Liquidity </h4>
+                    <div class="flex gap-[40px] sm:gap-[70px] md:gap-[116px] items-center">
+                        <div>
+                            <p class="font-normal text-sm leading-180 mt-4 text-clifford/70 text-nowrap"> When Buying </p>
+                            <p class="font-semibold text-2xl sm:text-28 leading-150 text-[#F06500] text-nowrap"> 3-5% </p>
+                        </div>
+                        <div>
+                            <p class="font-normal text-sm leading-180 mt-4 text-clifford/70 text-nowrap"> When Selling</p>
+                            <p class="font-semibold text-2xl sm:text-28 leading-150 text-clifford text-nowrap">3-5%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-[424px] w-full pt-[16px] pb-[22px] px-[20px] rounded-[10px] blur-6 box">
+                    <h4 class="font-normal text-22 leading-150 text-clifford"> Marketing </h4>
+                    <div class="flex gap-[40px] sm:gap-[70px] md:gap-[116px] items-center">
+                        <div>
+                            <p class="font-normal text-sm leading-180 mt-4 text-clifford/70 text-nowrap"> When Buying </p>
+                            <p class="font-semibold text-2xl sm:text-28 leading-150 text-clifford text-nowrap"> 3-5% </p>
+                        </div>
+                        <div>
+                            <p class="font-normal text-sm leading-180 mt-4 text-clifford/70 text-nowrap"> When Selling </p>
+                            <p class="font-semibold text-2xl sm:text-28 leading-150 text-clifford"> 3-5%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-[424px] w-full pt-[16px] pb-[22px] px-[20px] rounded-[10px] blur-6 box">
+                    <h4 class="font-normal text-22 leading-150 text-clifford"> Rewards </h4>
+                    <div class="flex gap-[40px] sm:gap-[70px] md:gap-[116px] items-center">
+                        <div>
+                            <p class="font-normal text-sm leading-180 mt-4 text-clifford/70 text-nowrap"> When Buying </p>
+                            <p class="font-semibold text-2xl sm:text-28 leading-150 text-clifford text-nowrap"> 3-5% </p>
+                        </div>
+                        <div>
+                            <p class="font-normal text-sm leading-180 mt-4 text-clifford/70 text-nowrap"> When Selling </p>
+                            <p class="font-semibold text-2xl sm:text-28 leading-150 text-clifford text-nowrap"> 3-5% </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="py-[40px] px-[20px] sm:py-[50px] sm:px-[40px] lg:py-[67px] lg:px-[66px] rounded-[10px] mt-[22px] box-2">
+                <div class="flex flex-col lg:flex-row gap-[30px] lg:gap-[19px] items-center justify-center">
+                    <div class="flex flex-col sm:flex-row gap-[40px] lg:gap-[157px] items-center justify-center w-full">
+                        <div class="w-full max-w-[361px]">
+                            <img class="w-full h-auto" src="./circle.png" alt="image">
+                        </div>
+                        <div class="w-full max-w-[307px]">
+                            <img class="w-full h-auto" src="./color-img.png" alt="image">
+                        </div> 
+
+                    </div>
+                    <div class="w-full max-w-[315px]">
+                        <img class="w-full h-auto" src="./dogie-img.png" alt="img">
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-[10px] overflow-x-auto mt-4 pb-[37px]">
+                <table class="w-full min-w-[900px]">
+                    <thead class="max-w-[1320px]">
+                        <tr>
+                            <th
+                                class="font-semibold text-nowrap text-base sm:text-lg bg-[#0c0c0c] leading-180 px-4 sm:px-7 py-4 text-clifford">
+                            </th>
+                            <th
+                                class="font-semibold text-nowrap text-base sm:text-lg bg-[#0c0c0c] leading-180 px-4 sm:px-7 py-4 text-clifford">
+                                Token </th>
+                            <th
+                                class="font-semibold text-nowrap text-base sm:text-lg bg-[#0c0c0c] leading-180 px-4 sm:px-7 py-4 text-clifford">
+                                Percentage </th>
+                            <th
+                                class="font-semibold text-nowrap text-base sm:text-lg bg-[#0c0c0c] leading-180 px-4 sm:px-7 py-4 text-clifford">
+                                Token Price </th>
+                            <th
+                                class="font-semibold text-nowrap text-base sm:text-lg bg-[#0c0c0c] leading-180 px-4 sm:px-7 py-4 text-clifford">
+                                Token Price</th>
+                            <th
+                                class="font-semibold text-nowrap text-base sm:text-lg bg-[#0c0c0c] leading-180 px-4 sm:px-7 py-4 text-clifford">
+                                Total Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody class="box-1">
+                        <tr>
+                            <td
+                                class="text-center font-normal text-base sm:text-lg leading-180 px-4 sm:px-7 py-3 text-clifford">
+                                Seddiaq</td>
+                            <td
+                                class="font-normal text-base sm:text-lg leading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                1,00,000</td>
+                            <td
+                                class="font-normal text-base sm:text-lg leading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                12%</td>
+                            <td
+                                class="font-normal text-base sm:text-lg leading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                58.3</td>
+                            <td
+                                class="font-normal text-base sm:text-lg leading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                12%</td>
+                            <td
+                                class="font-normal text-base sm:text-lg leading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                10% Monthly</td>
+                        </tr>
+
+                       <tr>
+                            <td
+                                class="text-center font-normal text-base sm:text-lg leading-180 px-4 sm:px-7 py-3 text-clifford">
+                                Seddiaq</td>
+                            <td
+                                class="font-normal text-base sm:text-lg leading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                1,00,000</td>
+                            <td
+                                class="font-normal text-base sm:text-lg leading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                12%</td>
+                            <td
+                                class="font-normal text-base sm:text-lg leading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                58.3</td>
+                            <td
+                                class="font-normal text-base sm:text-lg leading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                12%</td>
+                            <td
+                                class="font-normal text-base sm:text-lg leading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                10% Monthly</td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                class="text-center font-normal text-base sm:text-lg leading-180 px-4 sm:px-7 py-3 text-clifford">
+                                Seddiaq</td>
+                            <td
+                                class="font-normal text-base sm:text-lgleading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                1,00,000</td>
+                            <td
+                                class="font-normal text-base sm:text-lg leading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                12%</td>
+                            <td
+                                class="font-normal text-base sm:text-lg leading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                58.3</td>
+                            <td
+                                class="font-normal text-base sm:text-lg leading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                12%</td>
+                            <td
+                                class="font-normal text-base sm:text-lg leading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                10% Monthly</td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                class="text-center font-normal text-base sm:text-lgleading-180 px-4 sm:px-7 py-3 text-clifford">
+                                Seddiaq</td>
+                            <td
+                                class="font-normal text-base sm:text-lg leading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                1,00,000</td>
+                            <td
+                                class="font-normal text-base sm:text-lg leading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                12%</td>
+                            <td
+                                class="font-normal text-base sm:text-lg leading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                58.3</td>
+                            <td
+                                class="font-normal text-base sm:text-lg leading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                12%</td>
+                            <td
+                                class="font-normal text-base sm:text-lg leading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                10% Monthly</td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                class="text-center font-normal text-base sm:text-lg leading-180 px-4 sm:px-7 py-3 text-clifford">
+                                Seddiaq</td>
+                            <td
+                                class="font-normal text-base sm:text-lg leading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                1,00,000</td>
+                            <td
+                                class="font-normal text-base sm:text-lg leading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                12%</td>
+                            <td
+                                class="font-normal text-base sm:text-lg leading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                58.3</td>
+                            <td
+                                class="font-normal text-base sm:text-lg leading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                12%</td>
+                            <td
+                                class="font-normal text-base sm:text-lg leading-180 text-clifford/70 px-4 sm:px-7 py-3 text-center">
+                                10% Monthly</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

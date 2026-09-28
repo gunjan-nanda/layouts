@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Overflow-section</title>
+    <style type="text/tailwindcss">
+        @theme {
+        --color-clifford: white;
+         --color-dark-charcoal:#1D1A1A;
+          --color-deep-black:#151313;
+          --color-black:#0C0B0B;
+          --leading-180:180%;
+          --leading-150:150%;
+           --leading-128:128%;
+           --text-22:22px;
+            --text-17:17px;
+      }
+    
+   
+        * {
+            font-family: "poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="min-h-screen px-4 py-5 bg-dark-charcoal flex items-center overflow-hidden relative">
+        <div class="max-w-[1320px] w-full mx-auto">
+            <div class="flex max-xl:flex-col gap-[55px] max-sm:gap-[20px] items-center">
+                <div class="w-1/2 max-lg:w-full">
+                    <h1
+                        class="font-semibold text-5xl max-sm:text-[35px] max-sm:text-center leading-128 text-clifford">
+                        How to Buy
+                    </h1>
+                    <p class="font-normal mt-6 text-lg max-sm:text-[10px] leading-180 text-clifford/70">Urna, dictum
+                        volutpat augue tortor. Fermentum vulputate convallis viverra facilisis. Aliquam porttitor sem
+                        rhoncus rhoncus, quis. Arcu, ut enim eget pellentesque neque. Nibh pellentesque lobortis etiam
+                        sed. Cursus donec porttitor fames tellus. </p>
+                    <div class="mt-[48px] max-sm:mt-[27px]">
+                        <div
+                            class="flex gap-[23px] group items-center bg-deep-black max-w-[660px] p-[11px] w-full rounded-[46px]">
+                            <div
+                                class="size-[71px] max-sm:size-[51px] font-semibold text-22 max-sm:text-17 leading-150 text-black flex items-center justify-center rounded-full  group-hover:bg-gradient-to-r from-[#FFA800] to-[#F06500] group-hover:bg-black group-hover:text-[white]  bg-[#ffffff]">
+                                1</div>
+                            <div>
+                                <h2 class="font-semibold text-22 max-sm:text-17 leading-150 text-clifford">
+                                    Cras nunc libero ac
+                                </h2>
+                                <p class="font-normal text-lg max-sm:text-[9px] leading-180 text-clifford/70 ">
+                                    Amet, integer etultrices non viverra dolor dui
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex gap-[23px] group my-4 items-center bg-deep-black max-w-[660px] p-[11px] w-full rounded-[46px]">
+                            <div
+                                class="size-[71px] max-sm:size-[51px] font-semibold text-22 max-sm:text-17 leading-150% text-black flex items-center justify-center rounded-full group-hover:bg-gradient-to-r from-[#FFA800] to-[#F06500] group-hover:bg-black group-hover:text-[white] bg-[#ffffff] ">
+                                2</div>
+                            <div>
+                                <h2 class="font-semibold text-22 max-sm:text-17 leading-150 text-clifford">
+                                    Cras nunc libero ac
+                                </h2>
+                                <p class="font-normal text-lg max-sm:text-[9px] leading-180 text-clifford/70 ">
+                                    Amet, integer etultrices non viverra dolor dui
+                                </p>
+                            </div>
+                        </div>
+                         <div
+                            class="flex gap-[23px] group my-4 items-center bg-deep-black max-w-[660px] p-[11px] w-full rounded-[46px]">
+                            <div
+                                class="size-[71px] max-sm:size-[51px] font-semibold text-22 max-sm:text-17 leading-150% text-black flex items-center justify-center rounded-full group-hover:bg-gradient-to-r from-[#FFA800] to-[#F06500] group-hover:bg-black group-hover:text-[white] bg-[#ffffff] ">
+                                3</div>
+                            <div>
+                                <h2 class="font-semibold text-22 max-sm:text-17 leading-150 text-clifford">
+                                    Cras nunc libero ac
+                                </h2>
+                                <p class="font-normal text-lg max-sm:text-[9px] leading-180 text-clifford/70 ">
+                                    Amet, integer etultrices non viverra dolor dui
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/2 max-xl:w-full flex justify-center">
+                    <img src="./overflow.png" alt="How to buy" width="1056" height="636"
+                        class=" absolute right-[-7.5%] top-1/2 -translate-y-1/2  max-xl:relative max-xl:right-auto  max-xl:top-auto max-xl:translate-y-0  max-xl:w-[700px]   max-md:w-[600px]  max-sm:w-[287px] max-[400px]:w-[380px] max-2xl:w-[800px] max-w-[750px]  ">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

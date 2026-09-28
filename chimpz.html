@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHIMPZ hero section</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style-type: none;
+            box-sizing: border-box;
+            color: #FFFFFF;
+
+        }
+
+        .item {
+            font-family: Fira Sans, sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #FFFFFF;
+        }
+
+        .item:hover a {
+            color: #C2C2C2;
+        }
+
+        .bg-image {
+            background-image: url(bg-image.png);
+            background-repeat: no-repeat;
+            padding: 0px 20px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: 1;
+            min-height: 810px;
+        }
+
+        .link-flex {
+            display: flex;
+            align-items: center;
+            gap: 46px;
+        }
+
+        .link-flex {
+            color: #C2C2C2;
+        }
+
+        .logo-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 25px 0px 24px 0px;
+        }
+
+        .social-flex {
+            display: flex;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .social-link {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .btn {
+            font-family: Dela Gothic One, sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            color: #FFFFFF;
+            width: 144px;
+            height: 51px;
+            opacity: 1;
+            padding: 14px 32px;
+            gap: 10px;
+            border-radius: 36px;
+            background: #FFC20A;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            color: #FFC20A;
+            background: #FFFFFF;
+        }
+
+        .mobile-nav {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        a {
+            line-height: 0;
+        }
+
+        .para {
+            font-family: Roboto, sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            /* margin-top: 97px; */
+            line-height: 150%;
+            color: #FFFFFF;
+        }
+
+        .heading {
+            font-family: "Exo 2", sans-serif;
+            font-weight: 700;
+            font-size: 64px;
+            max-width: 604px;
+            line-height: 100%;
+            color: #3B945E;
+        }
+
+        .para-1 {
+            font-family: Fira Sans, sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            max-width: 631px;
+            margin-top: 16px;
+            line-height: 150%;
+            color: #FFFFFF;
+        }
+
+        .color-green {
+            text-shadow: 2px 2px 6px #3B945E;
+
+        }
+
+        .color-white {
+            text-shadow: 2px 2px 6px #FFFFFF;
+        }
+
+        .chimpz-img {
+
+            z-index: -1;
+        }
+
+        .img-flex {
+            display: flex;
+        }
+
+        .bottom-layer {
+            position: absolute;
+            width: 100%;
+            z-index: 10;
+            height: 100px;
+            bottom: 0;
+            right: 0;
+            transform: rotate(180deg);
+            background: linear-gradient(180deg, #000000 36.19%, rgba(0, 0, 0, 0) 100%);
+        }
+
+        .upper-layer {
+            background: linear-gradient(180deg, #000000 36.19%, rgba(0, 0, 0, 0) 100%);
+            position: absolute;
+            width: 100%;
+            top: 0;
+            z-index: -1;
+            left: 0;
+            height: 100px;
+        }
+
+        .content-parent {
+            margin-top: 97px;
+            color: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.01) 85.54%, rgba(255, 255, 255, 0) 100%);
+            backdrop-filter: blur(6px)
+        }
+
+        @media (min-width:1024px) {
+            .chimpz-img {
+                position: absolute;
+                top: 87px;
+                right: 181px;
+                margin-top: 10px;
+            }
+        }
+
+        @media (max-width:992px) {
+            .bg-image {
+                background-size: inherit;
+            }
+            .content-parent{
+                margin-top:20px ;
+            }
+
+            .span-1 {
+                width: 30px;
+                
+                height: 2px;
+                z-index: 10;
+                background-color: #FFFFFF;
+            }
+
+            .logo-flex {
+                padding: 20px;
+            }
+
+            label {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .mobile-nav {
+                display: flex;
+                position: fixed;
+                flex-direction: column;
+                width: 100%;
+                height: 100vh;
+                top: 0;
+                right: -100%;
+                align-items: center;
+                justify-content: center;
+                background-color: black;
+            }
+
+
+
+            .para {
+                margin-top: 50px;
+                margin-bottom: 20px;
+            }
+
+            .para-1 {
+                margin-top: 20px;
+            }
+
+            input:checked~.mobile-nav {
+                right: 0;
+            }
+
+            .social-link {
+                flex-direction: column;
+            }
+
+            .link-flex {
+                flex-direction: column;
+            }
+
+            .chimpz-img {
+                max-width: 531px;
+                width: 100%;
+                height: auto;
+            }
+
+            .social-flex {
+                flex-direction: column;
+            }
+
+            .btn {
+                z-index: -1;
+            }
+
+            .img-flex {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .heading {
+                font-size: 40px;
+
+            }
+
+            .para {
+                margin-top: 50px;
+                margin-bottom: 20px;
+            }
+
+            .para-1 {
+                margin-top: 20px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-image">
+        <div class="upper-layer"></div>
+        <div class="container">
+            <div class="bottom-layer"></div>
+            <div class="logo-flex">
+               <a href=""> <img width="50px" height="41.58px" src="./logo.svg" alt="logo-img"></a>
+                <input type="checkbox" id="manuicon" hidden>
+                <label for="manuicon">
+                    <span class="span-1"></span>
+                    <span class="span-1"></span>
+                    <span class="span-1"></span>
+                </label>
+
+                <div class="mobile-nav">
+                    <div class="social-flex">
+                        <ul class="link-flex">
+                            <li class="item"><a href="">Home</a></li>
+                            <li class="item"><a href="">About</a></li>
+                            <li class="item"><a href="">How to Buy</a></li>
+                            <li class="item"><a href="">Tokenomics</a></li>
+                            <li class="item"><a href="">Roadmap</a></li>
+                        </ul>
+                        <div class="social-link">
+                            <a target="_blank" href="https://discord.com/">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="16" r="15.5" stroke="white" />
+                                    <g clip-path="url(#clip0_55804_1496)">
+                                        <path
+                                            d="M18.5026 9.3335C18.7184 9.3335 18.9893 9.39016 19.2068 9.4435C19.9651 9.62683 20.8643 9.85433 21.5026 10.3335C22.0968 10.7793 22.5584 11.5568 22.9151 12.3468C23.6568 13.9927 24.1726 16.1868 24.3509 17.8552C24.4359 18.6468 24.4568 19.4435 24.3043 19.9793C24.2293 20.2427 24.0668 20.441 23.9526 20.5627C23.6043 20.9318 23.1559 21.2077 22.7126 21.4585L22.4926 21.5827C22.3477 21.6633 22.2019 21.7422 22.0551 21.8193L21.6201 22.0443L21.0226 22.3418L20.5418 22.5785C20.3658 22.6666 20.1643 22.6897 19.973 22.6435C19.7817 22.5973 19.6129 22.4849 19.4965 22.3262C19.3802 22.1675 19.3237 21.9727 19.3372 21.7764C19.3506 21.5801 19.4331 21.3948 19.5701 21.2535L19.2084 20.5302C18.1685 20.8462 17.087 21.0046 16.0001 21.0002C14.8584 21.0002 13.7693 20.8335 12.7918 20.5302L12.4309 21.2518C12.5684 21.3929 12.6514 21.5781 12.6653 21.7746C12.6792 21.9711 12.623 22.1662 12.5067 22.3252C12.3905 22.4842 12.2216 22.5969 12.0302 22.6433C11.8387 22.6896 11.6371 22.6667 11.4609 22.5785L11.0076 22.3535C10.5043 22.1052 10.0009 21.8568 9.51093 21.5827C8.99926 21.2968 8.45676 20.9927 8.05093 20.5618C7.88897 20.3981 7.76841 20.1981 7.69926 19.9785C7.54593 19.4435 7.56759 18.6477 7.65176 17.8552C7.83009 16.1868 8.34593 13.9927 9.08843 12.3468C9.44426 11.5568 9.90593 10.7793 10.5001 10.3335C11.1384 9.85433 12.0376 9.62683 12.7959 9.4435C13.0134 9.39016 13.2834 9.3335 13.5001 9.3335C13.6199 9.33339 13.7384 9.35914 13.8474 9.40899C13.9564 9.45883 14.0533 9.5316 14.1317 9.62233C14.21 9.71306 14.2678 9.81961 14.3012 9.93472C14.3346 10.0498 14.3427 10.1708 14.3251 10.2893C14.8796 10.2073 15.4395 10.1663 16.0001 10.1668C16.5759 10.1668 17.1384 10.2085 17.6784 10.2902C17.6607 10.1716 17.6687 10.0505 17.7021 9.9353C17.7354 9.82009 17.7932 9.71343 17.8715 9.6226C17.9498 9.53178 18.0468 9.45893 18.1559 9.40904C18.2649 9.35914 18.3827 9.33338 18.5026 9.3335ZM19.6309 11.3027C19.5059 11.2627 19.4759 11.2802 19.4309 11.3552L19.3793 11.4485C19.2446 11.6794 19.0401 11.8616 18.7952 11.9688C18.5504 12.076 18.2778 12.1028 18.0168 12.0452C17.354 11.9029 16.6779 11.8319 16.0001 11.8335C15.2901 11.8335 14.6109 11.9085 13.9834 12.0452C13.7224 12.1028 13.4498 12.076 13.205 11.9688C12.9601 11.8616 12.7556 11.6794 12.6209 11.4485L12.5693 11.356C12.5251 11.281 12.4951 11.2635 12.3709 11.3027C12.0743 11.3968 11.7559 11.4977 11.5001 11.6668C11.2609 11.846 10.9418 12.2918 10.6076 13.0327C9.96926 14.4468 9.46926 16.536 9.30926 18.0327C9.27593 18.3485 9.25843 18.6193 9.25426 18.8427V19.0877C9.25759 19.236 9.26843 19.3535 9.28343 19.4385C9.49509 19.646 9.75676 19.8085 10.0193 19.9577L10.5876 20.2718L10.9593 20.4677L11.2626 19.861C11.1157 19.7242 11.0232 19.5389 11.002 19.3393C10.9808 19.1397 11.0324 18.9391 11.1472 18.7745C11.2621 18.6099 11.4325 18.4922 11.6272 18.4432C11.8218 18.3942 12.0276 18.4171 12.2068 18.5077C13.2201 19.0168 14.5384 19.3335 16.0001 19.3335C17.4609 19.3335 18.7801 19.0152 19.7934 18.5085C19.9649 18.4226 20.1608 18.3985 20.348 18.4402C20.5352 18.4819 20.7022 18.5869 20.821 18.7375C20.9398 18.8881 21.003 19.0751 20.9999 19.2668C20.9969 19.4586 20.9278 19.6434 20.8043 19.7902L20.7376 19.861L21.0409 20.4693C21.2893 20.341 21.5384 20.2052 21.7884 20.0668C22.1134 19.8868 22.4551 19.6977 22.7193 19.4393C22.7343 19.3535 22.7443 19.236 22.7484 19.0877V18.8427C22.7417 18.5717 22.7233 18.3012 22.6934 18.0318C22.5334 16.536 22.0334 14.4468 21.3951 13.0318C21.0618 12.2918 20.7418 11.846 20.5034 11.6668C20.2468 11.4977 19.9284 11.3968 19.6309 11.3027ZM13.2918 14.7502C13.6785 14.7502 14.0495 14.9038 14.323 15.1773C14.5964 15.4508 14.7501 15.8217 14.7501 16.2085C14.7501 16.5953 14.5964 16.9662 14.323 17.2397C14.0495 17.5132 13.6785 17.6668 13.2918 17.6668C12.905 17.6668 12.5341 17.5132 12.2606 17.2397C11.9871 16.9662 11.8334 16.5953 11.8334 16.2085C11.8334 15.8217 11.9871 15.4508 12.2606 15.1773C12.5341 14.9038 12.905 14.7502 13.2918 14.7502ZM18.7084 14.7502C19.0952 14.7502 19.4661 14.9038 19.7396 15.1773C20.0131 15.4508 20.1668 15.8217 20.1668 16.2085C20.1668 16.5953 20.0131 16.9662 19.7396 17.2397C19.4661 17.5132 19.0952 17.6668 18.7084 17.6668C18.3217 17.6668 17.9507 17.5132 17.6772 17.2397C17.4037 16.9662 17.2501 16.5953 17.2501 16.2085C17.2501 15.8217 17.4037 15.4508 17.6772 15.1773C17.9507 14.9038 18.3217 14.7502 18.7084 14.7502Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_55804_1496">
+                                            <rect width="20" height="20" fill="white" transform="translate(6 6)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </a>
+                            <a target="_blank" href="https://web.telegram.org/a/">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="16" r="15.5" stroke="white" />
+                                    <path
+                                        d="M22.8155 8.00164C22.6179 8.01764 22.4239 8.06925 22.2412 8.15445H22.2387C22.0633 8.23189 21.2293 8.62248 19.9613 9.21455L15.4175 11.345C12.157 12.8732 8.95199 14.378 8.95199 14.378L8.99015 14.3615C8.99015 14.3615 8.76918 14.4424 8.53836 14.6185C8.39576 14.7195 8.27305 14.8517 8.17766 15.0071C8.0644 15.1921 7.9733 15.4751 8.00716 15.7677C8.06256 16.2625 8.35062 16.5592 8.55744 16.723C8.76672 16.8888 8.96615 16.9662 8.96615 16.9662H8.97107L11.9767 18.0935C12.1115 18.5752 12.8926 21.4341 13.0803 22.0927C13.1911 22.486 13.2988 22.732 13.4336 22.9198C13.4989 23.0157 13.5752 23.0959 13.6669 23.1603C13.7146 23.1912 13.7654 23.2156 13.8183 23.2329L13.7876 23.2247C13.7968 23.2274 13.8042 23.2357 13.811 23.2384C13.8356 23.2459 13.8522 23.2487 13.8836 23.2542C14.3594 23.4145 14.7416 23.0856 14.7416 23.0856L14.7632 23.0664L16.5377 21.2676L19.512 23.8079L19.5797 23.8401C20.1995 24.143 20.8273 23.9744 21.1591 23.677C21.4933 23.3775 21.6232 22.9945 21.6232 22.9945L21.6448 22.9328L23.9431 9.82443C24.0084 9.50099 24.025 9.1981 23.953 8.90413C23.8787 8.6066 23.7072 8.35071 23.4722 8.18666C23.2749 8.05311 23.0461 7.98865 22.8155 8.00164ZM22.7533 9.40642C22.7509 9.44959 22.7582 9.4448 22.741 9.52771V9.53525L20.4642 22.5072C20.4543 22.5257 20.4377 22.5662 20.3922 22.6066C20.3441 22.6491 20.306 22.6758 20.1059 22.5874L16.4682 19.4825L14.2708 21.7123L14.7324 18.4299L20.6759 12.2626C20.9209 12.009 20.839 11.9556 20.839 11.9556C20.8563 11.6445 20.4691 11.8645 20.4691 11.8645L12.9745 17.0334L12.972 17.0197L9.37978 15.6731V15.6704L9.37055 15.6683C9.37685 15.666 9.38301 15.6633 9.38901 15.6601L9.40871 15.6491L9.42779 15.6416C9.42779 15.6416 12.6353 14.1368 15.8957 12.6086C17.5281 11.8432 19.1728 11.0723 20.4377 10.4775C21.1879 10.1259 21.9388 9.77646 22.6905 9.42904C22.741 9.40711 22.717 9.40642 22.7533 9.40642Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <a target="_blank" href="https://x.com/">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="16" r="15.5" stroke="white" />
+                                    <path
+                                        d="M20.6536 8.6875H23.1346L17.7144 14.8825L24.0909 23.3125H19.0974L15.1869 18.1997L10.7124 23.3125H8.22988L14.0274 16.6862L7.91113 8.6875H13.0299L16.5646 13.3608L20.6521 8.6875H20.6536ZM19.7829 21.8275H21.1576L12.2836 10.0945H10.8084L19.7829 21.8275Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn">Buy Now</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="img-flex">
+                <div class="content-parent">
+                    <p class="para color-white">APE TOGETHER STRONG</p>
+                    <h1 class="heading color-green">CHIMPZ <span class="color-white"> A Green Revolution for Your
+                            Wallet</span></h1>
+                    <p class="para-1 color-white">Dedicated to all the chimps around the world, we have created a
+                        safe haven for all
+                        the risk-takers and degenerates who have their helmets ready for the next moon landing.</p>
+                </div>
+                <div>
+                    <img width="531px" height="567px" class="chimpz-img" src="./chimpz-img.png" alt="chimpz-img">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
